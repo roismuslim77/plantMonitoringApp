@@ -1,0 +1,1 @@
+{"dependencies":[],"output":[{"data":{"code":"__d(function(global, require, _aUnused, _bUnused, module, exports, _cUnused) {\n  module.exports = {\n  \"name\": \"RNBoilerplate\",\n  \"displayName\": \"RNBoilerplate\"\n};\n});","map":[]},"type":"js/module"}]}

@@ -4,18 +4,13 @@ import {Text} from 'react-native';
 import {withNavigation} from 'react-navigation';
 
 class Header extends Component{
-    handleIconClick(){
-        this.props.navigation.navigate('Cart')
-    }
     render(){
         return(
-            <Headers style={{backgroundColor: '#ff1111'}}>
-                <Left>
-                    <Text style={{marginRight: '3%', color: 'white', fontWeight: 'bold'}}>Bukavalak</Text></Left>
+            <Headers style={{backgroundColor: 'green', height: '24%'}}>
+                <Left/>
                 <Right>
-                    <Button onPress={()=>this.handleIconClick()} transparent>
-                    <Icon style={{marginRight: '2%', color: 'white'}} type='Ionicons' name='cart'/>
-                    </Button></Right>
+                    <Text style={{marginRight: '3%', color: 'white', fontWeight: 'bold'}}>About Me</Text>
+                </Right>
             </Headers>
         )
     }
