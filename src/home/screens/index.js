@@ -5,7 +5,7 @@ import { Container, Content,
     ListItem, Thumbnail, Left, Icon
 } from 'native-base';
 import {connect} from 'react-redux';
-import axios from 'axios';
+import PTRView from 'react-native-pull-to-refresh';
 
 import {addAllValue} from '../../public/redux/actions/addValue';
 import value from '../../public/redux/reducer/value';
@@ -14,21 +14,22 @@ class index extends Component{
  buttonPressed(){
     this.props.navigation.navigate('Me')
  }   
-
- componentDidMount(){
-    //this. props.dispatch(addAllProducts())
-    // axios.get('http://192.168.1.108:3333/products')
-    // .then(res=>{
-    // })
-    //alert(JSON.stringify(this.props.getValues.value))
- }
  componentWillMount(){
+    this.getData()
+ }
+ getData(){
     try{
         this.props.dispatch(addAllValue())
     }
     catch(err){
         alert(err)
     } 
+ }
+ 
+ _refresh(){
+    return new Promise((resolve)=>{
+        setTimeout(()=>{resolve(alert('re'))},2000)
+    });
  }
 
  render(){
@@ -88,7 +89,7 @@ class index extends Component{
                 </View>
             </Content>
         </ImageBackground>
-     )
+    )
  }
 }
 const mapStateToProps=(state)=>{

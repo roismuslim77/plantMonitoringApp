@@ -6,7 +6,7 @@ import {withNavigation} from 'react-navigation';
 class Header extends Component{
     render(){
         return(
-            <Headers style={{backgroundColor: 'green', height: '24%'}}>
+            <Headers style={{backgroundColor: 'white', height: '24%'}}>
                 <Left/>
                 <Right>
                     <Text style={{marginRight: '3%', color: 'white', fontWeight: 'bold'}}>About Me</Text>

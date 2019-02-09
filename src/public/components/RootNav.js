@@ -2,6 +2,8 @@ import {createStackNavigator, createAppContainer} from 'react-navigation';
 
 import HomeScreen from '../../home/screens';
 import MeScreen from '../../home/screens/Me';
+import SplashScreen from '../../home/screens/Splash';
+
 
 const RootNav = createStackNavigator({
     Home: {
@@ -9,9 +11,12 @@ const RootNav = createStackNavigator({
     },
     Me: {
         screen: MeScreen
+    },
+    Splash:{
+        screen: SplashScreen
     }
 },{
-    initialRouteName: 'Home',
+    initialRouteName: 'Splash',
     headerMode: 'none'
 })
 

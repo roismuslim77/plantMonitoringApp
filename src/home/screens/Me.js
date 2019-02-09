@@ -9,7 +9,6 @@ export default class Me extends Component{
         return(
         <ImageBackground style={styles.imgBackground} 
             source={{uri: 'https://www.redwallpapers.com/public/redwallpapers-large-thumb/grayscale-photography-of-leafed-plant-free-stock-photo-image-wallpaper.jpeg'}}>       
-            <Header/>
                 <View style={styles.content}>
                     <Image style={styles.logo}
                     source={{uri: 'https://upload.wikimedia.org/wikipedia/id/2/28/Politeknik_Harapan_Bersama.png'}}/>
@@ -41,10 +40,12 @@ const styles = StyleSheet.create({
     content:{
         flex: 6,
         alignItems: 'center',
+        justifyContent: 'center'
     },
     footer:{
         flex: 1,
         alignItems: 'center',
+        justifyContent: 'flex-end'
     },
     logo:{
         width: 100, 
