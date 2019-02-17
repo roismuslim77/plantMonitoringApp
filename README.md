@@ -2,4 +2,4 @@
 Android application that is used to monitor plants in the form of soil moisture, temperature, and rainfall around it
 
 # screenshoot aplication
-![screenshoot](https://drive.google.com/file/d/1HwB75rMHZQKg0qz-B-wc9QtAYvIww5Uk/view?usp=sharing)
+![screenshoot](http://idmustopha.com/img/portfolio/screenshot-2019-02-14_06.19.01.965.png)
